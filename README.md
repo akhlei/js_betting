@@ -1,2 +1,2 @@
-# js_betting
-Javascript Based Betting Game - may migrate to node for live play later on. 
+# js_Bets
+A poor odds browser gambling game where you bet on random outcomes - for serious gambling degenerates only. 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Bet Barista</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="jquery-3.1.0.min.js"></script>
+  </head>
+
+  <body>
+    <h2>Welcome, gambling degenerate!</h2>
+    <div class="bankroll">
+      <p class="bankroll-text">You have $100 remaining.</p>
+    </div>
+    <div class="chip-count">
+      <img class="chip" data-bankthreshold="20" src="https://d30y9cdsu7xlg0.cloudfront.net/png/43376-200.png"/>
+      <img class="chip" data-bankthreshold="40" src="https://d30y9cdsu7xlg0.cloudfront.net/png/43376-200.png"/>
+      <img class="chip" data-bankthreshold="60" src="https://d30y9cdsu7xlg0.cloudfront.net/png/43376-200.png"/>
+      <img class="chip" data-bankthreshold="80" src="https://d30y9cdsu7xlg0.cloudfront.net/png/43376-200.png"/> 
+      <img class="chip" data-bankthreshold="100" src="https://d30y9cdsu7xlg0.cloudfront.net/png/43376-200.png"/>
+    </div>
+    <div class="feedback">
+      <h3 class="feedback-text">Please place your bets and good luck! ;)</h3>
+    </div>
+    <br>
+    <h3>Bet Amount:</h3>
+    <input type="text" id="bet-value" placeholder="What's your bet? $5-$10.">
+    <h3>Guess:</h3>
+    <select id="guess-value">
+      <!-- TODO: iterate over my javascript to create these options rather than doing it directly in HTML-->
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select> 
+    <button type="submit" id="place-bet">Place Bet.</button>
+    <button id="restart-btn">Play Again!</button>
+    <script src="betScript.js"></script>
+  </body>
+
+</html>
